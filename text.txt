@@ -1,0 +1,23 @@
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web-Developer', 'Video Editor', 'Photographer', 'Data Analyst'],
+            typeSpeed: 40,
+        });
+    </script>
+
+
+     <div id="social-container">
+                    <img 
+                    src="./assets/icons8-linkedin-50.png" 
+                    alt="linkdin profile" 
+                    class="icon" 
+                    onclick = "location.href='https://linkdin.com/'"
+                    />
+                    <img 
+                    src="./assets/icons8-github-50.png" 
+                    alt="github profile" 
+                    class="icon" 
+                    onclick="location.href='https://github.com/'"
+                    />
+                </div>

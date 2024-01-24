@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>my portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <header>
+    <nav id="desktop-nav">
+      <div class="left">portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Experience">Experience</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="left">porfolio</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#Home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#About" onclick="toggleMenu()">About</a></li>
+          <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="Home">
+    <div class="main">
+      <div class="profileSection">
+        <img src="assets/Picsart_24-01-13_20-12-59-548.png" alt="png" />
+      </div>
+
+      <div class="textSection">I'm
+        <span class="sky-blue">Krishna</span>
+        <p>passionate About</p> 
+        <!--<p id="wd">Web-Developer</p>
+       <p id="wd">Data-Analyst</p>
+        <p id="wd">Video-editor</p>
+        <p id="wd">Photographer</p> -->
+        <span id="element"></span>
+
+        <div class="button-container">
+          <button class="btn-color2" onclick="window.open('./assets/krishna resume.pdf')">
+            Download Resume
+          </button>
+
+          <button class="btn-color1" onclick="location.href='#Contact'">
+            Contact
+          </button>
+        </div>
+
+        <div id="socialContainer">
+          <a title="linkedin" href="https://in.linkedin.com/">
+            <i id="first_i" class="fa-brands fa-linkedin-in"></i></a>
+          <a title="github" href="https://github.com/krishna-jhala/">
+            <i id="second_i" class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section id="About">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+
+    <div class="section-container">
+      <div class="pic-con">
+        <img src="./assets/about me photo.png" alt="aboutpic" class="aboutpic" />
+      </div>
+      <div class="text-con">
+        <div class="a">
+          <div class="ex-block">
+            <img src="./assets/icons8-badge-50.png" alt="badge" class="png" />
+            <h2>Experience</h2>
+            <hr id="hr">
+            <p>2+ years<br />Frontend Development</p>
+          </div>
+          <div class="edu-block">
+            <img src="./assets/icons8-book-50 (1).png" alt="book" class="png" />
+            <h2>Education</h2>
+            <hr id="hr">
+            <p>B.tech in "AI-ML"<br />12<sup>th</sup> with 86.2% <br />10<sup>th</sup> with 86.6%</p>
+          </div>
+        </div>
+        <div class="para">
+          <p>Passionate about Singing and always up for Exploring new Adventures. <br />Excels in Event Management and
+            Thrives
+            as
+            a Digital creator, blending creativity with organizational skills.<br />Eager to contribute and create
+            Memorable Experience.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section id="Experience">
+    <p class="Experience__text_p">Explore My</p>
+    <h1 class="h1_ex">Experience</h1>
+    <div class="Exp-container">
+      <div class="left-block">
+        <h2>Programming Languages</h2>
+        <div class="artical-container">
+          <article>
+            <img src="./assets/icons8-check-50.png" alt="check" class="checkicon" />
+            <div id="size">
+              <h3>C,C++</h3>
+              <p>intermediate</p>
+            </div>
+
+          </article>
+          <article>
+            <img src="./assets/icons8-check-50.png" alt="check" class="checkicon" />
+            <div id="size">
+              <h3>Python</h3>
+              <p>Intermediate</p>
+            </div>
+
+          </article>
+          <article>
+            <img src="./assets/icons8-java-50.png" alt="check" class="checkicon" />
+            <div id="size">
+              <h3>Java</h3>
+              <p>Beginner</p>
+            </div>
+
+          </article>
+          <article>
+            <img src="./assets/icons8-artificial-intelligence-50.png" alt="check" class="checkicon" />
+            <div id="size">
+              <h3>Machine <br />learning</h3>
+              <p>OpenCV</p>
+            </div>
+
+          </article>
+          <article>
+            <img src="./assets/icons8-html-30.png" alt="check" class="checkicon" />
+            <div id="size">
+              <h3>HTML</h3>
+              <p>intermediate</p>
+            </div>
+
+          </article>
+          <article>
+            <img src="./assets/icons8-css-50.png" alt="check" class="checkicon" />
+            <div id="size">
+              <h3>CSS</h3>
+              <p>intermediate</p>
+            </div>
+
+          </article>
+        </div>
+      </div>
+      <div class="right-block">
+        <h2>Achievements</h2>
+        <div class="txt-ac">
+
+          <p>
+          <ul>
+            <li>Participated in <span>"Robo-Race"</span> competition.</li>
+            <li>Participated in <span>"Smart India Hackathon 2023"</span>.</li>
+            <li>Completed 2-days workshop of <span>"DSA"</span> in <span>MANIT</span>.</li>
+            <li>Attended 10-days workshop on <span>"Image processing -OpenCV in java"</span></li>
+            <li>Selected as <span>Digital-Media cordinator </span> of the<span> SAC</span>.</li>
+          </ul>
+          </p>
+          <P>
+          <ul>
+            <span id="m">More To Achieve Yet</span>
+          </ul>
+          </P>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="Projects">
+    <p>Browse My</p>
+    <h3>Projects</h3>
+
+    <div class="project-container">
+      <div class="project1">
+        <div class="project-img">
+          <img src="unitconvertor.png" alt="" class="imgsize">
+
+        </div>
+        <p>Unit Convertor</p>
+        <div class="project-btn">
+          <button class="pbtn" onclick="location.href='https://github.com/krishna-jhala/'">github</button>
+        </div>
+      </div>
+      <div class="project2">
+        <div class="project-img">
+          <img src="0.jpg" alt="" class="imgsize">
+
+        </div>
+        <p>Aayu Medicinal Plant<br/> Identification app</p>
+        <div class="project-btn">
+          <button class="pbtn" onclick="location.href='https://github.com/krishna-jhala/'">github</button>
+        </div>
+      </div>
+
+      <div class="project3">
+        <div class="project-img">
+          <img src="mpr.jpg" alt="" class="imgsize">
+
+        </div>
+        <p>Medicinal plant Identification
+        </p>
+        <div class="project-btn">
+          <button class="pbtn" onclick="location.href='https://github.com/krishna-jhala/'">github</button>
+        </div>
+
+      </div>
+    </div>
+
+
+  </section>
+
+  <section id="Contact">
+    <p class="con-p">Get In Touch </p>
+    <h1 class="con-h">Contact Me</h1>
+
+    <div class="con-con">
+      <div class="mail">
+        <a href="mailto:jhalakrishna1809@gmail.com"><img src="./assets/icons8-mail-50 (1).png" alt="mail"
+            class="checkicon" /></a>
+
+        <p class="pmail"> <a href="mailto:jhalakrishna1809@gmail.com">jhalakrishna1809@gmail.com</a></p>
+      </div>
+
+      <div class="call">
+        <img src="./assets/icons8-call-50.png" alt="call" class="checkicon" />
+        <p class="pcall"><a href="tel:+919754337879">+919754337879</a></p>
+
+      </div>
+
+
+    </div>
+    
+  </section>
+  <footer>
+
+    <p>Copyright &#169 2023 Krishnajhala.All rights reserved.</p>
+
+  </footer>
+
+  
+
+  
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web-Developement', 'Video Editing', 'Photography', 'Data Analyst'],
+      typeSpeed: 70,
+      loop: true
+    });
+  </script>
+</body>
+
+</html>
